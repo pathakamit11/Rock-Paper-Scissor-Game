@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Page Scissor</title>
+</head>
+<body>
+    <div class="mainFrame">
+        <div class="displayScores" id="displayScoresDiv">
+            <div class="displayText">
+            <p id="pText">ROCK</p>
+            <p id="pText">PAPER</p>
+            <p id="pText">SCISSORS</p>
+        </div>
+            <div class="ScoresDiv1" id="ScoresDiv1">
+                <p>COMPUTER</p>
+            <p>SCORE</p>
+            <p id = "compuScores">0</p>
+            </div>
+            <div class="ScoresDiv2" id="ScoresDiv2">
+                <p>YOUR</p>
+                <p>SCORE</p>
+                <p id="yourScore">0</p>
+            </div>
+        </div>
+        
+        <div class="mianPageDiv" id="mianPageDiv">
+            <div class="rock" >
+                <img id="rock" class="option" src="./images/rock.png" alt="altRock">
+                    
+            </div>
+            <div class="paper">
+                <img id="paper" class="option" src="./images/paper.png" alt="altPaper">
+                
+            </div>
+            <div class="scissors">
+                <img id="scissors" class="option" src="./images/scissors.png" alt="AltScissors">
+               
+            </div>
+            <div class="lines">
+                <img id="line1" src="./images/Line1.png" alt="altLine1">
+                <img id="line2" src="./images/Line2.png" alt="altLine2">
+                <img id="line3" src="./images/Line3.png" alt="altLine3">
+            </div>
+        </div>
+
+        <div class="gamePlayDiv" id="gamePlayDiv">
+            <div class="userChoiceDiv" id="userChoiceDiv">
+                <h4>YOU PICKED</h4>
+                <img id="userPicked" src="./rock.png" alt="altRock">
+                
+            </div>
+            <div class="winningStatusDiv" id="winningStatusDiv">
+                <h1 id = "winningStatusH1"></h1>
+                <h4>AGAINST PC</h4>
+                <button id="playAgain">PLAY AGAIN</button>
+            </div>
+            <div class="computerChoiceDiv" id="computerChoiceDiv">
+                <h4>PC PICKED</h4>
+                <img id="computerPicked" src="./scissors.png" alt="AltScissors">
+            </div>
+            <div class="userWinnerCircle" id="userWinCircle">
+                <div class="mainCircle"><div class="middleCircle"><div class="innerCircle">
+                </div></div></div>
+            </div>
+           
+            <div class="cpWinnerCircle" id="cpWinCircle" >
+                <div class="mainCircle"><div class="middleCircle"><div class="innerCircle">
+                </div></div></div>
+            </div>
+        </div>
+
+
+
+        <div class="gameRule" id="ruleFrame">
+            <h3>Game Rules</h3>
+            <div class="gamepointer1"></div><p id="p1">Rock beats scissors, scissors beat paper, and paper beats rock. </p>
+            <div class="gamepointer2"></div><p id="p2">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</p>
+            <div class="gamepointer3"></div><p id="p3">Use rock, paper, scissors to settle minor decisions or simply play to pass the time </p>
+            <div class="gamepointer4"></div><p id="p4">If both players lay down the same hand, each player lays down another hand
+            </p>
+        </div>
+        <div class="cancelBtn" id="cancelBtn">X</div>
+        <div class="buttonRule">
+            <button id="Next">NEXT</button>
+            <button id="btnRule">Rules</button>
+        </div>
+        
+        <div class="trophyWinnerPage" id="torphyWinnerP">
+            <img id="altStars" src="./images/WinnerStars.png" alt="altStars">
+            <img id="altCup" src="./images/WinnerCup.png" alt="altCup">
+            <p>HURRAY!!</p>
+                <h2>YOU WON THE GAME</h2>
+                <button id ="playAgainButton">PLAY AGAIN</button>
+        </div>
+
+    </div>
+    <script src="functions.js"></script>
+</body>
+</html>
